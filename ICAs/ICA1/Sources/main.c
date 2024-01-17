@@ -1,10 +1,10 @@
 /********************************************************************/
-// HC12 Program:  YourProg - MiniExplanation
+// HC12 Program:  kkremsater - ICA1
 // Processor:     MC9S12XDP512
 // Bus Speed:     MHz
-// Author:        This B. You
+// Author:        Korbyn Kremsater
 // Details:       A more detailed explanation of the program is entered here               
-// Date:          Date Created
+// Date:          Jan 10 , 2024
 // Revision History :
 //  each revision will have a date + desc. of changes
 
