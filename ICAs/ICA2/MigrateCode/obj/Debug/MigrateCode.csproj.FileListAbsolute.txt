@@ -1,0 +1,8 @@
+C:\Users\carlose\Downloads\MigrateCode\MigrateCode\MigrateCode\bin\Debug\MigrateCode.exe.config
+C:\Users\carlose\Downloads\MigrateCode\MigrateCode\MigrateCode\bin\Debug\MigrateCode.exe
+C:\Users\carlose\Downloads\MigrateCode\MigrateCode\MigrateCode\bin\Debug\MigrateCode.pdb
+C:\Users\carlose\Downloads\MigrateCode\MigrateCode\MigrateCode\obj\Debug\MigrateCode.csproj.AssemblyReference.cache
+C:\Users\carlose\Downloads\MigrateCode\MigrateCode\MigrateCode\obj\Debug\MigrateCode.csproj.SuggestedBindingRedirects.cache
+C:\Users\carlose\Downloads\MigrateCode\MigrateCode\MigrateCode\obj\Debug\MigrateCode.csproj.CoreCompileInputs.cache
+C:\Users\carlose\Downloads\MigrateCode\MigrateCode\MigrateCode\obj\Debug\MigrateCode.exe
+C:\Users\carlose\Downloads\MigrateCode\MigrateCode\MigrateCode\obj\Debug\MigrateCode.pdb

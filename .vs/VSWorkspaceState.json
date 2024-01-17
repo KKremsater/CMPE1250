@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ICAs"
+    "\\ICAs",
+    "\\ICAs\\ICA1",
+    "\\ICAs\\ICA1\\Sources"
   ],
+  "SelectedNode": "\\ICAs\\ICA1\\Sources\\main.c",
   "PreviewInSolutionExplorer": false
 }
