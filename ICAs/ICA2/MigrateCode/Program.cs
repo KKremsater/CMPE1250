@@ -40,7 +40,7 @@ namespace MigrateCode
         static void RED (bool bOn)
         {
             if (bOn)
-                PT1AD1 |= (byte)(((UInt32)1 << (7)));
+                PT1AD1 |= 1 << (7)));
             else
             {
                 PT1AD1 &= 0x7F;
