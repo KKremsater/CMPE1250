@@ -24,19 +24,17 @@
 /********************************************************************/
 //Defines
 /********************************************************************/
-#define RED_LED 0b10000000
-#define GREEN_LED 
 
 /********************************************************************/
 // Local Prototypes
 /********************************************************************/
-void RED(int counter);
-void GREEN(int counter);
+void RED(unsigned int bOn)
+void GREEN(unsigned int bOn)
 
 /********************************************************************/
 // Global Variables
 /********************************************************************/
-unsigned int counter;
+unsigned int uiMainLoopCount = 0;
 
 /********************************************************************/
 // Constants
@@ -56,47 +54,44 @@ void main(void)
 /********************************************************************/
   // one-time initializations
 /********************************************************************/
-PT1AD1 |= RED_LED;
-DDR1AD1 |= RED_LED;
-
-PT1AD1 |= GREEN_LED;
-DDR1AD1 |= GREEN_LED;
-counter = 0;
+PT1AD1 &= 0x1F;
+DDR1AD1 = 0xE0;
 
 /********************************************************************/
   // main program loop
 /********************************************************************/
   for (;;)
   {
-
+    ++uiMainLoopCount;
+    RED(uiMainLoopCount < 0x1000);
+    GREEN(uiMainLoopCount >= 0x1000);
   }                   
 }
 
 /********************************************************************/
 // Functions
 /********************************************************************/
-void RED(int counter)
+void RED(unsigned int bOn)
 {
-        if(counter < 0x1000)
-    {
-        PT1AD1 ^= RED_LED;
-    }
-    else
-    {
-        PT1AD1 &= 0X7F;
-    }
+  if (bOn < 0x1000)
+      PT1AD1 |= 1 << (7);
+  else
+  {
+      PT1AD1 &= 0x7F;
+  }
+
 }
 
-void GREEN(int counter)
+void GREEN(unsigned int bOn)
 {
-        if(counter < 0x1000)
-    {
-        PT1AD1 ^= GREEN_LED;
-    }
-    else
-    {
-        PT1AD1 &= 0X7F;
-    }
+  if(bOn >= 0x1000)
+  {
+      PT1AD1 |= 0x20;
+  }
+  else
+  {
+      PT1AD1 &= 0b1101111;
+  }
 }
 /********************************************************************/
 // Interrupt Service Routines
