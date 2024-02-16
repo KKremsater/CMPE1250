@@ -1,4 +1,4 @@
-#include "./sw_led.h"
+#include "sw_led.h"
 
 void SWL_Init(void)
 {

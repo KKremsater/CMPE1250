@@ -34,7 +34,7 @@ void RED(unsigned int bOn)
 /********************************************************************/
 // Global Variables
 /********************************************************************/
-unsigned int LoopCount = 0;
+  unsigned int LoopCount = 0;
 
 /********************************************************************/
 // Constants
@@ -67,6 +67,21 @@ void main(void)
     {
       SWL_ON(SWL_RED);
     }
+    else 
+    {
+      SWL_OFF(SWL_RED);
+    }
+
+    if (SWL_Pushed() )
+    {
+      
+    }
+    else 
+    {
+      SWL_OFF(SWL_YELLOW);
+      SWL_ON(SWL_GREEN);
+    }
+    
   }      
                    
 }
