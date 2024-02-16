@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ICAs",
+    "\\ICAs\\ICA2",
+    "\\ICAs\\ICA2\\CodeMigrated",
+    "\\ICAs\\ICA2\\MigrateCode"
   ],
+  "SelectedNode": "\\ICAs\\ICA2\\CodeMigrated\\ICA2.c",
   "PreviewInSolutionExplorer": false
 }
