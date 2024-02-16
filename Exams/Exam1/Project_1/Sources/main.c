@@ -62,22 +62,29 @@ void main(void)
 
   for (;;)
   {
+    // Loop Count For Red Light on/off logic 
     ++LoopCount;
+
+    // If statement to turn red light on and off
     if(LoopCount > 0x3000)
     {
+      // red light on
       SWL_ON(SWL_RED);
     }
     else 
     {
+      // red light off
       SWL_OFF(SWL_RED);
     }
 
-    if (SWL_Pushed() )
+    //check if 2 switches are pressed to turn on yellow light
+    if ( )
     {
-      
+      // turn on yellow light
     }
     else 
     {
+      //turn off yellor light and turn green on
       SWL_OFF(SWL_YELLOW);
       SWL_ON(SWL_GREEN);
     }
